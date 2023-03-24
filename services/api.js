@@ -3,7 +3,7 @@ import { HYDRATE } from "next-redux-wrapper";
 export const seiApi = createApi({
   reducerPath: "seiApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:3000/api",
+    baseUrl: "https://sei-institute.vercel.app/api",
   }),
   tagTypes: ["Enroll", "About", "Contact", "Carousel","Routine","Category"],
   extractRehydrationInfo(action, { reducerPath }) {
